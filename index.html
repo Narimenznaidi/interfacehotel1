@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>The Residence Tunis – Interface Client</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdf6ec; /* beige clair */
+      color: #4e342e; /* marron foncé */
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #6d4c41;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    header img {
+      height: 80px;
+      margin: 10px auto;
+    }
+
+    h1 {
+      margin: 5px 0 0 0;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .section {
+      background-color: #fffaf3;
+      border-left: 6px solid #6d4c41;
+      border-radius: 10px;
+      padding: 15px 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .section:hover {
+      transform: translateY(-2px);
+    }
+
+    h2 {
+      color: #6d4c41;
+    }
+
+    form input, form select, form textarea, form button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #c9b8a0;
+      border-radius: 5px;
+      font-size: 15px;
+    }
+
+    form button {
+      background-color: #6d4c41;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+
+    form button:hover {
+      background-color: #5d4037;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #a1887f;
+      margin: 30px 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo The Residence Tunis">
+    <h1>Bienvenue à The Residence Tunis</h1>
+    <p>Interface client – Réservations & Services</p>
+  </header>
+
+  <main>
+    <div class="section">
+      <h2>🛏️ Réserver une chambre</h2>
+      <form>
+        <input type="text" placeholder="Nom complet" required>
+        <input type="date" placeholder="Date d'arrivée" required>
+        <input type="date" placeholder="Date de départ" required>
+        <select>
+          <option>Chambre simple</option>
+          <option>Chambre double</option>
+          <option>Suite</option>
+        </select>
+        <button>Envoyer</button>
+      </form>
+    </div>
+
+    <div class="section">
+      <h2>🍽️ Réserver une table au restaurant</h2>
+      <form>
+        <input type="text" placeholder="Nom" required>
+        <input type="date">
+        <input type="time">
+        <button>Réserver</button>
+      </form>
+    </div>
+
+    <div class="section">
+      <h2>💆 Réserver Golf & Spa</h2>
+      <form>
+        <input type="text" placeholder="Nom">
+        <select>
+          <option>Spa Relax</option>
+          <option>Massage</option>
+          <option>Golf</option>
+        </select>
+        <input type="date">
+        <button>Réserver</button>
+      </form>
+    </div>
+
+    <div class="section">
+      <h2>🧒 Inscription Kids Club</h2>
+      <form>
+        <input type="text" placeholder="Nom de l'enfant">
+        <input type="number" placeholder="Âge">
+        <input type="date">
+        <button>Inscrire</button>
+      </form>
+    </div>
+
+    <div class="section">
+      <h2>✅ Check-in / Check-out</h2>
+      <form>
+        <input type="text" placeholder="Nom">
+        <select>
+          <option>Check-in</option>
+          <option>Check-out</option>
+        </select>
+        <button>Soumettre</button>
+      </form>
+    </div>
+
+    <div class="section">
+      <h2>🧾 Consulter ma facture</h2>
+      <form>
+        <input type="text" placeholder="Numéro de réservation">
+        <button>Voir</button>
+      </form>
+    </div>
+
+    <div class="section">
+      <h2>✍️ Laisser un avis</h2>
+      <form>
+        <input type="text" placeholder="Nom">
+        <textarea placeholder="Votre avis..."></textarea>
+        <button>Envoyer</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 The Residence Tunis – Projet de fin d’études
+  </footer>
+
+</body>
+</html>
